@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Home Box",
+    "thumbnail": "https://i.ibb.co.com/NdcbFqxV/images-2.jpg",
+    "banner": "https://example.com/images/smart-home-box-banner.jpg",
+    "frequency": "Yearly",
+    "price": 199.99,
+    "description": "Transform your home into a smart home with curated smart devices, home automation products, and IoT gadgets.",
+    "tech_category": "Smart Home",
+    "features": [
+      "Smart Home Devices",
+      "Home Automation Tools",
+      "Cutting-edge IoT Gadgets"
+    ],
+    "subscription_benefits": [
+      "Discount on Future Smart Home Purchases",
+      "Exclusive Smart Home Tutorials",
+      "Early Access to Product Releases"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 315
+  },
+  {
+    "id": 2,
+    "name": "AI Developer Kit",
+    "thumbnail": "https://example.com/images/ai-developer-kit-thumbnail.jpg",
+    "banner": "https://example.com/images/ai-developer-kit-banner.jpg",
+    "frequency": "Monthly",
+    "price": 99.99,
+    "description": "Get started with AI development using curated tools, libraries, and learning resources.",
+    "tech_category": "Artificial Intelligence",
+    "features": [
+      "AI Development Tools",
+      "Pre-trained Models",
+      "Comprehensive Tutorials"
+    ],
+    "subscription_benefits": [
+      "Access to Premium AI Tools",
+      "Monthly AI Challenges",
+      "Exclusive Community Support"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 210
+  },
+  {
+    "id": 3,
+    "name": "Web Dev Essentials",
+    "thumbnail": "https://example.com/images/web-dev-essentials-thumbnail.jpg",
+    "banner": "https://example.com/images/web-dev-essentials-banner.jpg",
+    "frequency": "One-time",
+    "price": 49.99,
+    "description": "A complete toolkit for modern web developers including templates, libraries, and resources.",
+    "tech_category": "Web Development",
+    "features": [
+      "Responsive Templates",
+      "Modern JavaScript Libraries",
+      "UI/UX Resources"
+    ],
+    "subscription_benefits": [
+      "Lifetime Access to Updates",
+      "Exclusive Webinars",
+      "Priority Support"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 520
+  },
+  {
+    "id": 4,
+    "name": "Graphic Design Bundle",
+    "thumbnail": "https://example.com/images/graphic-design-bundle-thumbnail.jpg",
+    "banner": "https://example.com/images/graphic-design-bundle-banner.jpg",
+    "frequency": "Yearly",
+    "price": 149.99,
+    "description": "Enhance your design skills with a curated bundle of graphic design resources.",
+    "tech_category": "Graphic Design",
+    "features": [
+      "Premium Design Assets",
+      "Typography Collections",
+      "Design Tutorials"
+    ],
+    "subscription_benefits": [
+      "Monthly New Asset Releases",
+      "Exclusive Design Community",
+      "Early Access to New Courses"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 430
+  },
+  {
+    "id": 5,
+    "name": "Mobile App Starter Kit",
+    "thumbnail": "https://example.com/images/mobile-app-starter-kit-thumbnail.jpg",
+    "banner": "https://example.com/images/mobile-app-starter-kit-banner.jpg",
+    "frequency": "Monthly",
+    "price": 59.99,
+    "description": "Kickstart your mobile app projects with pre-built components and templates.",
+    "tech_category": "Mobile Development",
+    "features": [
+      "Cross-platform UI Kits",
+      "Reusable Components",
+      "API Integration Examples"
+    ],
+    "subscription_benefits": [
+      "New Components Monthly",
+      "Access to Premium Templates",
+      "Dedicated Support"
+    ],
+    "ratings": 4.5,
+    "number_of_reviews": 275
+  },
+  {
+    "id": 6,
+    "name": "Data Science Toolbox",
+    "thumbnail": "https://example.com/images/data-science-toolbox-thumbnail.jpg",
+    "banner": "https://example.com/images/data-science-toolbox-banner.jpg",
+    "frequency": "Yearly",
+    "price": 249.99,
+    "description": "A comprehensive toolbox for data scientists including datasets, tools, and tutorials.",
+    "tech_category": "Data Science",
+    "features": [
+      "Curated Datasets",
+      "Data Analysis Tools",
+      "Visualization Libraries"
+    ],
+    "subscription_benefits": [
+      "Exclusive Dataset Access",
+      "Advanced Tutorials",
+      "Community Support"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 380
+  }
+]
