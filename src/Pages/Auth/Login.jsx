@@ -6,7 +6,7 @@ const Login = () => {
     const {signInUser} = use(AuthContext)
 
     const handleLogin =(e)=>{
-        e.preventDefault();
+        e.preventDefault();  
 
         const form = e.target;
         const email = form.email.value;

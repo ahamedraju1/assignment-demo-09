@@ -7,24 +7,26 @@ import Register from "../Pages/Auth/Register";
 import Slider from "../HomeLayout/Slider";
 import SubscriptionBox from "../HomeLayout/SubscriptionBox";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import SubscriptionDetails from "../Pages/SubscriptionDetails/SubscriptionDetails";
+import PrivateRoute from "../Provider/PrivateRoute";
 // import Slider from "../Component/Navigation/Slider";
 
 export const router = createBrowserRouter(
     [
-        { 
+        {
             path: '/',
             Component: Home,
-            children:[
+            children: [
                 {
                     path: '',
                     element: <Slider></Slider>
                 },
                 {
-                    path:'/subscription',
+                    path: '/subscription',
                     element: <SubscriptionBox></SubscriptionBox>
                 }
-                
-                
+
+
             ]
         },
         {
@@ -48,6 +50,12 @@ export const router = createBrowserRouter(
                     element: <Register></Register>
                 }
             ]
+        },
+        {
+            path: '/subDetails',
+            element: <PrivateRoute>
+                <SubscriptionDetails></SubscriptionDetails>
+            </PrivateRoute>
         },
         {
             path: '/*',
