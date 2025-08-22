@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../Component/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import SubscriptionBox from '../../HomeLayout/SubscriptionBox';
+import AccessPlus from '../../HomeLayout/AccessPlus';
 
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
             <section className='main'>
               <Outlet></Outlet>
               <SubscriptionBox></SubscriptionBox>
-               
+              <AccessPlus></AccessPlus>
             </section>
           </main>
         </div>

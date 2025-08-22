@@ -2,38 +2,49 @@ import React, { use } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
-    const {createUser, setUser}= use(AuthContext);
-    const handleRegister = e =>{
-        e.preventDefault();
+    const { createUser, setUser, googleSignIn } = use(AuthContext);
 
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const photoURL = e.target.photoURL.value;
-        const password = e.target.password.value;
-        console.log(name, email, photoURL,password);
-
-        // create user
-        createUser(email, password)
+    const handleGoogleSignIn=()=>{
+        googleSignIn()
         .then(result=>{
-            console.log(user)
-            const user = result.user;
-            setUser(user);
-          
-            return updateProfile(user,{
-                displayName: name,
-                photoURL: photoURL
-            });   
-        })
-        .then(()=>{
-            console.log(" user profile updated");
-            
+            console.log(result.user)
         })
         .catch(error=>{
             console.log(error)
         })
+    }
 
+    const handleRegister = e => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const photoURL = e.target.photoURL.value;
+        const password = e.target.password.value;
+        console.log(name, email, photoURL, password);
+
+        // create user
+        createUser(email, password)
+            .then(result => {
+                console.log(user)
+                const user = result.user;
+                setUser(user);
+
+                return updateProfile(user, {
+                    displayName: name,
+                    photoURL: photoURL
+                });
+            })
+            .then(() => {
+                console.log(" user profile updated");
+
+            })
+            .catch(error => {
+                console.log(error)
+            })
+  
     }
 
 
@@ -45,15 +56,19 @@ const Register = () => {
                     <label className="label">Name</label>
                     <input type="text" name='name' className="input" placeholder="Name" required />
                     <label className="label">Email</label>
-                    <input type="email" name='email' className="input" placeholder="Email" required/>
+                    <input type="email" name='email' className="input" placeholder="Email" required />
                     <label className="label">PhotoURL</label>
-                    <input type="text" name='photoURL' className="input" placeholder="URL" required/>
+                    <input type="text" name='photoURL' className="input" placeholder="URL" required />
                     <label className="label">Password</label>
                     <input type="password" name='password' className="input" placeholder="Password"
-                     required/>
-                
+                        required />
+
                     <button type='submit' className="btn btn-neutral mt-4">Register</button>
                     <p>Already have an account? Please <Link to='/auth/login' className='text-blue-400 underline'>Login</Link></p>
+
+                    <button onClick={handleGoogleSignIn} className='btn  w-full'><FcGoogle size={24}/>
+                        Login with Google
+                    </button>
                 </form>
             </div>
         </div>

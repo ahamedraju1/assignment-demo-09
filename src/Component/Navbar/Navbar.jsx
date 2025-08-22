@@ -52,7 +52,7 @@ const Navbar = () => {
                     <h3 className="text-3xl font-bold">Gadgetsy</h3>
                 </div>
                 <div className="nav flex gap-5 text-lg">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : undefined)}>Home</NavLink>
                     <NavLink to="/dashboard">Dashboard</NavLink>
                     <NavLink to="/profile">Profile</NavLink>
                 </div>

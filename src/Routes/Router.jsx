@@ -9,6 +9,7 @@ import SubscriptionBox from "../HomeLayout/SubscriptionBox";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import SubscriptionDetails from "../Pages/SubscriptionDetails/SubscriptionDetails";
 import PrivateRoute from "../Provider/PrivateRoute";
+import AccessPlus from "../HomeLayout/AccessPlus";
 // import Slider from "../Component/Navigation/Slider";
 
 export const router = createBrowserRouter(
@@ -24,6 +25,10 @@ export const router = createBrowserRouter(
                 {
                     path: '/subscription',
                     element: <SubscriptionBox></SubscriptionBox>
+                },
+                {
+                    path: '/',
+                    element: <AccessPlus></AccessPlus>
                 }
 
 
@@ -52,7 +57,7 @@ export const router = createBrowserRouter(
             ]
         },
         {
-            path: '/subDetails',
+            path: '/subDetails/:id',
             element: <PrivateRoute>
                 <SubscriptionDetails></SubscriptionDetails>
             </PrivateRoute>

@@ -12,6 +12,8 @@ const SubscriptionBox = () => {
     }, []);
 
     return (
+        <>
+        <h2 className='text-3xl font-semibold text-center my-10'> Subscription service your Dream our Goal</h2>
         <div className='grid grid-cols-3 gap-5 items-center justify-center'>
             {
                 products.map((item) => (
@@ -19,17 +21,19 @@ const SubscriptionBox = () => {
                         <div key={item.id} className='card bg-base-100 w-full shadow-sm'>
                             <figure className="px-10 pt-10">
                                 <img
-
                                     src={item.thumbnail}
                                     alt="Shoes"
                                     className="rounded-xl" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title">{item.name}</h2>
-                                <p>{item.price}</p>
-                                <p> {item.description} </p>
+                                <p>${item.price}</p>
+                                <p>{item.tech_category}</p>
+                                <p>{item.frequency}</p>
+                                {/* <p> {item.description} </p>  */}
                                 <div className="card-actions">
-                                    <Link to='/subDetails'  className="btn btn-primary"> View more </Link>
+                                    <Link to={`/subDetails/${item.id}`}
+                                 className="btn btn-primary"> View more </Link>
                                 </div>
                             </div>
                         </div>
@@ -38,6 +42,7 @@ const SubscriptionBox = () => {
             }
 
         </div>
+        </>
     );
 };
 

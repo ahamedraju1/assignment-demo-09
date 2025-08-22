@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Smart Home Box",
-    "thumbnail": "https://i.ibb.co.com/NdcbFqxV/images-2.jpg",
+    "name": "",
+    "thumbnail": "https://i.ibb.co.com/PZ6vz031/images-1.jpg",
     "banner": "https://example.com/images/smart-home-box-banner.jpg",
     "frequency": "Yearly",
     "price": 199.99,
@@ -23,30 +23,33 @@
   },
   {
     "id": 2,
-    "name": "AI Developer Kit",
-    "thumbnail": "https://example.com/images/ai-developer-kit-thumbnail.jpg",
+    "name": "iPhone 16 Pro Max",
+    "thumbnail": "https://i.ibb.co.com/NdcbFqxV/images-2.jpg",
     "banner": "https://example.com/images/ai-developer-kit-banner.jpg",
     "frequency": "Monthly",
-    "price": 99.99,
-    "description": "Get started with AI development using curated tools, libraries, and learning resources.",
-    "tech_category": "Artificial Intelligence",
+    "price":  1199.99,
+    "description": "The iPhone 16 Pro Max features the powerful A18 Pro chip, a 6.9-inch Super Retina XDR display, titanium design, and advanced camera system with 5x telephoto zoom.",
+    "tech_category": "Smartphone",
     "features": [
-      "AI Development Tools",
-      "Pre-trained Models",
-      "Comprehensive Tutorials"
+      "6.9-inch Super Retina XDR OLED display",
+      "A18 Pro Bionic chip",
+      "ProMotion technology with 120Hz refresh rate",
+      "48MP main camera + Ultra Wide + Telephoto (5x optical zoom)",
+      "USB-C with Thunderbolt support",
+      "iOS 18 with AI-powered features"
     ],
     "subscription_benefits": [
-      "Access to Premium AI Tools",
-      "Monthly AI Challenges",
-      "Exclusive Community Support"
+      "Free AppleCare+ for 3 months",
+      "Exclusive iCloud+ storage upgrade",
+      "Early access to iOS beta updates"
     ],
     "ratings": 4.7,
-    "number_of_reviews": 210
+    "number_of_reviews": 1250
   },
   {
     "id": 3,
     "name": "Web Dev Essentials",
-    "thumbnail": "https://example.com/images/web-dev-essentials-thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co.com/SXLxPRxj/images-3.jpg",
     "banner": "https://example.com/images/web-dev-essentials-banner.jpg",
     "frequency": "One-time",
     "price": 49.99,
@@ -68,7 +71,7 @@
   {
     "id": 4,
     "name": "Graphic Design Bundle",
-    "thumbnail": "https://example.com/images/graphic-design-bundle-thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co.com/7xTkP8CG/images-6.jpg",
     "banner": "https://example.com/images/graphic-design-bundle-banner.jpg",
     "frequency": "Yearly",
     "price": 149.99,
@@ -90,7 +93,7 @@
   {
     "id": 5,
     "name": "Mobile App Starter Kit",
-    "thumbnail": "https://example.com/images/mobile-app-starter-kit-thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co.com/GfcZ6tY4/images-5.jpg",
     "banner": "https://example.com/images/mobile-app-starter-kit-banner.jpg",
     "frequency": "Monthly",
     "price": 59.99,
@@ -112,7 +115,7 @@
   {
     "id": 6,
     "name": "Data Science Toolbox",
-    "thumbnail": "https://example.com/images/data-science-toolbox-thumbnail.jpg",
+    "thumbnail": "https://i.ibb.co.com/W4m2c9sP/images-4.jpg",
     "banner": "https://example.com/images/data-science-toolbox-banner.jpg",
     "frequency": "Yearly",
     "price": 249.99,

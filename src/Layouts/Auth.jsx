@@ -11,7 +11,7 @@ const Auth = () => {
             <header className='w-11/12 mx-auto py-5'>
 
                <Navbar></Navbar>
-               <Dashboard></Dashboard>
+               
             </header>
             <main className='w-11/12 mx-auto my-10'>
                 
