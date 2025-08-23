@@ -1,8 +1,9 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Login = () => {
+    const [error, setError] = useState("");
     const { signInUser, googleSignIn } = use(AuthContext)
      const location = useLocation();
      console.log(location);
@@ -31,7 +32,9 @@ const Login = () => {
                 navigate(location.state? location.state : "/");
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
+                const errorCode = error.code;
+                setError(errorCode);
             })
 
     }
@@ -45,10 +48,19 @@ const Login = () => {
                 </h3>
                 <form onSubmit={handleLogin} className="fieldset">
                     <label className="label">Email</label>
-                    <input type="email" name='email' className="input" placeholder="Email" />
+                    <input type="email" name='email' className="input" placeholder="Email"
+                    required
+                    />
                     <label className="label">Password</label>
-                    <input type="password" name='password' className="input" placeholder="Password" />
-                    <div><Link to={'/auth/password'} className="link link-hover">Forgot password?</Link></div>
+                    <input type="password" name='password' className="input" placeholder="Password"
+                    required
+                    />
+
+                    <div><Link to={'/auth/password'} className="link link-hover">Forgot password?</Link>
+                    </div>
+
+                    {error && <p className='text-red-500 mt-2'>{error}</p> }
+
                     <button type='submit' className="btn btn-neutral mt-4">
                         Login
                     </button>

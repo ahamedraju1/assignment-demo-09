@@ -1,12 +1,13 @@
 import React, { use } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
-    const { createUser, setUser, googleSignIn } = use(AuthContext);
-
+    const { createUser, setUser, googleSignIn, updateUser } = use(AuthContext);
+     const navigate = useNavigate()
+     
     const handleGoogleSignIn=()=>{
         googleSignIn()
         .then(result=>{
@@ -28,9 +29,17 @@ const Register = () => {
         // create user
         createUser(email, password)
             .then(result => {
-                console.log(user)
+                // console.log(user)
                 const user = result.user;
-                setUser(user);
+                updateUser({displayName: name, photoURL: photoURL})
+                .then(()=>{
+                    setUser({...user, displayName: name, photoURL: photoURL});
+                    navigate('/');
+                })
+                .catch((error)=>{
+                    console.log(error);
+                    setUser(user);
+                })
 
                 return updateProfile(user, {
                     displayName: name,
@@ -38,11 +47,11 @@ const Register = () => {
                 });
             })
             .then(() => {
-                console.log(" user profile updated");
-
+                console.log(" user profile updated", {photoURL: photoURL, displayName: name});
             })
             .catch(error => {
                 console.log(error)
+                 
             })
   
     }
