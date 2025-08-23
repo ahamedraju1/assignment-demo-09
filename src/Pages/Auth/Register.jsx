@@ -66,7 +66,7 @@ const Register = () => {
                     <button type='submit' className="btn btn-neutral mt-4">Register</button>
                     <p>Already have an account? Please <Link to='/auth/login' className='text-blue-400 underline'>Login</Link></p>
 
-                    <button onClick={handleGoogleSignIn} className='btn  w-full'><FcGoogle size={24}/>
+                    <button onSubmit={handleGoogleSignIn} className='btn  w-full'><FcGoogle size={24}/>
                         Login with Google
                     </button>
                 </form>

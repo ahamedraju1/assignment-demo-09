@@ -10,6 +10,7 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import SubscriptionDetails from "../Pages/SubscriptionDetails/SubscriptionDetails";
 import PrivateRoute from "../Provider/PrivateRoute";
 import AccessPlus from "../HomeLayout/AccessPlus";
+import Password from "../Component/Password/Password";
 // import Slider from "../Component/Navigation/Slider";
 
 export const router = createBrowserRouter(
@@ -55,6 +56,10 @@ export const router = createBrowserRouter(
                     element: <Register></Register>
                 }
             ]
+        },
+        {
+            path: '/auth/password',
+            element: <Password></Password>
         },
         {
             path: '/subDetails/:id',
