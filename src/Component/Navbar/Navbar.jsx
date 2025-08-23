@@ -60,7 +60,7 @@ const Navbar = () => {
                     <img src={userIcon} alt="user" />
                     {
                         user ? <button
-                        onSubmit={handleLogOut}
+                        onClick={handleLogOut}
                          className='btn btn-secondary px-10'>
                          Log Out</button> :
                         <Link to="/auth/login" className="btn btn-primary px-10">
