@@ -1,11 +1,15 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import { FcGoogle } from "react-icons/fc";
+import { FaEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+
 
 const Register = () => {
     const { createUser, setUser, googleSignIn, updateUser } = use(AuthContext);
+     const [showPassword, setShowPassword] = useState(false);
      const navigate = useNavigate()
      
     const handleGoogleSignIn=()=>{
@@ -69,9 +73,22 @@ const Register = () => {
                     <label className="label">PhotoURL</label>
                     <input type="text" name='photoURL' className="input" placeholder="URL" required />
                     <label className="label">Password</label>
-                    <input type="password" name='password' className="input" placeholder="Password"
-                        required />
+                    <div className='relative'>
+                    <input 
+                    type={showPassword ? "text" : 'password'}
+                    name='password'
+                    className="input"
+                    placeholder="Password"
+                    required />
+                    <button
+                    onClick={()=>{ setShowPassword(!showPassword)}}
+                     className='btn btn-xs absolute top-3 right-8'>  
+                     {
+                        showPassword ? <FaEyeSlash /> : <FaEye />
 
+                     }
+                     </button>
+                    </div>
                     <button type='submit' className="btn btn-neutral mt-4">Register</button>
                     <p>Already have an account? Please <Link to='/auth/login' className='text-blue-400 underline'>Login</Link></p>
 

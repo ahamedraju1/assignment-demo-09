@@ -7,27 +7,29 @@ import userIcon from '../../assets/user.png'
 const Navbar = () => {
     const { user, userSignOut } = use(AuthContext);
 
-    const handleLogOut = ()=>{
+    const handleLogOut = () => {
         console.log("user trying to Logout");
         userSignOut()
-        .then(()=>{
-            alert("Log out successfully");
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+            .then(() => {
+                alert("Log out successfully");
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
     return (
         <>
-            
 
-            <div>
-                {user && user.email}
-            </div>
+
+
             <div className="w-11/12 mx-auto flex justify-between items-center py-5 px-8 bg-white relative z-10">
+                
                 <div className="flex items-center gap-3">
                     <img className="w-12 h-10 rounded-full" src={logo} alt="Logo" />
                     <h3 className="text-3xl font-bold">Gadgetsy</h3>
+                </div>
+                <div>
+                    {user && user.email}
                 </div>
                 <div className="nav flex gap-5 text-lg">
                     <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : undefined)}>Home</NavLink>
@@ -36,15 +38,15 @@ const Navbar = () => {
                     <NavLink to='/subPackage'>Subscription </NavLink>
                 </div>
                 <div className='login-btn flex gap-5 items-center'>
-                    <img className='w-12 rounded-full' src={`${user ? user.photoURL : userIcon }`} alt="user" />
+                    <img className='w-12 rounded-full' src={`${user ? user.photoURL : userIcon}`} alt="user" />
                     {
                         user ? <button
-                        onClick={handleLogOut}
-                         className='btn btn-secondary px-10'>
-                         Log Out</button> :
-                        <Link to="/auth/login" className="btn btn-primary px-10">
+                            onClick={handleLogOut}
+                            className='btn btn-secondary px-10'>
+                            Log Out</button> :
+                            <Link to="/auth/login" className="btn btn-primary px-10">
                                 Login
-                         </Link>
+                            </Link>
                     }
 
                 </div>

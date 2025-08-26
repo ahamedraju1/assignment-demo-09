@@ -3,8 +3,10 @@ import Navbar from '../../Component/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
+import usePageTitle from '../../Hooks/usePageTitle';
 
 const Profile = () => {
+    usePageTitle("Profile");
 const { user } = use(AuthContext);
 const [name, setName] = useState("");
 const [photoURL, setPhotoURL] = useState('');

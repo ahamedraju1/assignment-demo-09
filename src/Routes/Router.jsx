@@ -48,7 +48,9 @@ export const router = createBrowserRouter(
         },
         {
             path: '/subPackage',
-            element: <Subscription></Subscription>
+            element: <PrivateRoute> 
+                <Subscription></Subscription>
+                </PrivateRoute>
         },
         {
             path: '/auth',
