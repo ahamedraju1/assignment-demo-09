@@ -33,6 +33,7 @@ const Navbar = () => {
                     <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : undefined)}>Home</NavLink>
                     <NavLink to="/dashboard">Dashboard</NavLink>
                     <NavLink to="/profile">Profile</NavLink>
+                    <NavLink to='/subPackage'>Subscription </NavLink>
                 </div>
                 <div className='login-btn flex gap-5 items-center'>
                     <img className='w-12 rounded-full' src={`${user ? user.photoURL : userIcon }`} alt="user" />

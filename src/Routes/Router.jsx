@@ -11,6 +11,7 @@ import SubscriptionDetails from "../Pages/SubscriptionDetails/SubscriptionDetail
 import PrivateRoute from "../Provider/PrivateRoute";
 import AccessPlus from "../HomeLayout/AccessPlus";
 import Password from "../Component/Password/Password";
+import Subscription from "../Pages/Subscription/Subscription";
 // import Slider from "../Component/Navigation/Slider";
 
 export const router = createBrowserRouter(
@@ -44,6 +45,10 @@ export const router = createBrowserRouter(
             element: <PrivateRoute>
                 <Profile></Profile>
             </PrivateRoute>
+        },
+        {
+            path: '/subPackage',
+            element: <Subscription></Subscription>
         },
         {
             path: '/auth',
