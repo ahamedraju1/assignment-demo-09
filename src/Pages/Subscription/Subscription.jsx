@@ -4,18 +4,21 @@ import usePageTitle from '../../Hooks/usePageTitle';
 
 const Subscription = () => {
     usePageTitle("Subscription ")
+
     return (
         <>
             <Navbar />
             
-            <div className='my-28'>
+            <div className='my-24 pt-16'>
+                <div className='w-11/12 mx-auto bg-gray-100 py-8'>
                     <h2 className='text-center text-3xl font-bold  '>Subscription Packages </h2>
-                    <p className='text-center text-base-400 text-blue-600 mb-5'>For your future dream with us</p>
-             <div className='w-11/12 mx-auto flex gap-5'>
+                    <p className='text-center text-base-400 text-blue-600 mb-5'>For your smartest dream with us</p>
+                </div>
+             <div className='w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-5 pt-5 '>
                 {/* basic */}
-                     <div className="card w-96 bg-base-100 shadow-sm">
+                     <div className="card w-full bg-base-100 shadow-md h-full">
                     <div className="card-body">
-                        <span className="badge badge-xs badge-warning">Most Popular</span>
+                        <span className="badge badge-xs badge-warning">Best-selling</span>
                         <div className="flex justify-between">
                             <h2 className="text-3xl font-bold">Basic</h2>
                             <span className="text-xl">$19/mo</span>
@@ -52,7 +55,7 @@ const Subscription = () => {
                     </div>
                 </div>
                 {/* standard */}
-                <div className="card w-96 bg-base-100 shadow-sm">
+                <div className="card w-full bg-base-100 shadow-md h-full">
                     <div className="card-body">
                         <span className="badge badge-xs badge-warning">Most Popular</span>
                         <div className="flex justify-between">
@@ -91,7 +94,7 @@ const Subscription = () => {
                     </div>
                 </div>
                 {/* premium */}
-                <div className="card w-96 bg-base-100 shadow-sm">
+                <div className="card w-full bg-base-100 shadow-md h-full">
                     <div className="card-body">
                         <span className="badge badge-xs badge-warning">Most Popular</span>
                         <div className="flex justify-between">

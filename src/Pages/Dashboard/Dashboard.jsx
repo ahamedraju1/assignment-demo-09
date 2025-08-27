@@ -6,14 +6,14 @@ import usePageTitle from '../../Hooks/usePageTitle';
 const Dashboard = () => {
     usePageTitle("dashboard");
     return (
-        <div>
+        <div className='pt-16'>
             <Helmet>
                 <title>Dashboard | Gadgetsy </title>
             </Helmet>
             <Navbar></Navbar>
             <div className='bg-gray-100 min-h-[500px]'>
             <div className='space-y-2'>
-             <h2 className='text-2xl font-extralight ml-12 mt-6'> Your Subscription Score will be displayed here </h2>
+             <h2 className='text-2xl font-extralight ml-12 mt-6 py-2'> Your Subscription Score will be displayed here </h2>
              <p className='ml-12 mt-5'>your current Score:  </p>
              <p className='ml-12'>your membership ID:  </p>
              <p className='ml-12'>your current status: Standard </p>

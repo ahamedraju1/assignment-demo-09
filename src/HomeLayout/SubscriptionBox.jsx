@@ -13,12 +13,13 @@ const SubscriptionBox = () => {
 
     return (
         <>
-        <h2 className='text-3xl font-semibold text-center my-10'> Subscription service your Dream our Goal</h2>
-        <div className='grid grid-cols-3 gap-5 items-center justify-center'>
+        <h2 className='text-3xl font-semibold text-center my-12
+        '> Subscription service your Dream our Goal</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
             {
                 products.map((item) => (
                     <>
-                        <div key={item.id} className='card bg-base-100 w-full shadow-sm'>
+                        <div key={item.id} className='card bg-base-100 w-full h-full flex flex-col shadow-sm'>
                             <figure className="px-10 pt-10">
                                 <img
                                     src={item.thumbnail}

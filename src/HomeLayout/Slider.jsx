@@ -7,15 +7,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
- 
-
 
 const Slider = () => {
+    
     return (
         <>
-        <div className='w-full'>
+        <div className='w-full pt-20'>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
@@ -38,40 +36,8 @@ const Slider = () => {
          <div className="swiper-button-prev !w-8 !h-8 text-white after:!text-sm"></div>
         <div className="swiper-button-next !w-8 !h-8 text-white after:!text-sm"></div>
         </Swiper>
-        {/* daisy ui from */}
         </div>
-        {/* <div>
-            <div className="carousel w-full">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img
-                        src={slider_img}
-                        className="w-full h-4/5" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img
-                        src={slid_img_2}
-                        className="w-full h-4/5" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img
-                        src={slid_img_3}
-                        className="w-full h-4/5" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-               
-            </div>
-        </div> */}
+       
         </>
     );
 };
