@@ -4,6 +4,7 @@ import { Outlet } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import usePageTitle from '../../Hooks/usePageTitle';
+import Footer from '../../Component/Footer/Footer';
 
 const Profile = () => {
     usePageTitle("Profile");
@@ -32,7 +33,7 @@ const [message, setMessage] = useState("");
         <>
             <Navbar />
 
-            <div className="w-11/12 mx-auto my-10">
+            <div className="w-11/12 mx-auto my-10 flex flex-col min-h-screen pt-10">
                 <h2 className="text-3xl text-center my-14
                  font-semibold ">Profile Page</h2>
 
@@ -81,7 +82,9 @@ const [message, setMessage] = useState("");
                     </div>
                 </div>
             </div>
-
+           <div className=''>
+                 <Footer/>
+           </div>
         </>
 
     );

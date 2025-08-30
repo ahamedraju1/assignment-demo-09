@@ -5,6 +5,7 @@ import SubscriptionBox from '../../HomeLayout/SubscriptionBox';
 import AccessPlus from '../../HomeLayout/AccessPlus';
 // import { Helmet } from 'react-helmet';
 import usePageTitle from '../../Hooks/usePageTitle';
+import Footer from '../../Component/Footer/Footer';
 
 
 
@@ -30,6 +31,7 @@ const Home = () => {
               <Outlet></Outlet>
               <SubscriptionBox></SubscriptionBox>
               <AccessPlus></AccessPlus>
+              <Footer></Footer>
             </section>
           </main>
         </div>

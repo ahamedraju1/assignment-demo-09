@@ -2,11 +2,13 @@ import React from 'react';
 import Navbar from '../../Component/Navbar/Navbar';
 import { Helmet } from 'react-helmet';
 import usePageTitle from '../../Hooks/usePageTitle';
+import Footer from '../../Component/Footer/Footer';
 
 const Dashboard = () => {
     usePageTitle("dashboard");
     return (
-        <div className='pt-16'>
+        <>
+        <div className='flex flex-col min-h-screen pt-36'>
             <Helmet>
                 <title>Dashboard | Gadgetsy </title>
             </Helmet>
@@ -19,7 +21,12 @@ const Dashboard = () => {
              <p className='ml-12'>your current status: Standard </p>
             </div>
             </div>
+           
         </div>
+         <div className='mt-24'>
+            <Footer/>
+         </div>
+        </>
     );
 };
 

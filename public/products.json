@@ -1,25 +1,27 @@
 [
   {
     "id": 1,
-    "name": "",
+    "name": "iphone 16",
     "thumbnail": "https://i.ibb.co.com/PZ6vz031/images-1.jpg",
     "banner": "https://example.com/images/smart-home-box-banner.jpg",
-    "frequency": "Yearly",
+    "frequency": "One-Time Purchase",
     "price": 199.99,
-    "description": "Transform your home into a smart home with curated smart devices, home automation products, and IoT gadgets.",
-    "tech_category": "Smart Home",
+    "description": "The iPhone 16 introduces groundbreaking AI features, an A18 Bionic chip, enhanced cameras, and a stunning always-on Super Retina XDR display.",
+    "tech_category": "Smartphone",
     "features": [
-      "Smart Home Devices",
-      "Home Automation Tools",
-      "Cutting-edge IoT Gadgets"
+      "A18 Bionic Chip for Ultimate Performance",
+      "6.9-inch Super Retina XDR Display",
+      "ProMotion with 120Hz Refresh Rate",
+      "Triple-Lens Camera with 8K Video",
+      "Satellite Connectivity for Emergency SOS"
     ],
     "subscription_benefits": [
-      "Discount on Future Smart Home Purchases",
-      "Exclusive Smart Home Tutorials",
-      "Early Access to Product Releases"
+      "AppleCare+ Coverage Available",
+      "Exclusive iCloud Storage Upgrade",
+      "Early Access to New iOS Features"
     ],
     "ratings": 4.8,
-    "number_of_reviews": 315
+    "number_of_reviews": 1200
   },
   {
     "id": 2,
@@ -27,7 +29,7 @@
     "thumbnail": "https://i.ibb.co.com/NdcbFqxV/images-2.jpg",
     "banner": "https://example.com/images/ai-developer-kit-banner.jpg",
     "frequency": "Monthly",
-    "price":  1199.99,
+    "price": 1199.99,
     "description": "The iPhone 16 Pro Max features the powerful A18 Pro chip, a 6.9-inch Super Retina XDR display, titanium design, and advanced camera system with 5x telephoto zoom.",
     "tech_category": "Smartphone",
     "features": [
@@ -48,90 +50,98 @@
   },
   {
     "id": 3,
-    "name": "Web Dev Essentials",
+    "name": "iPhone 16 Pro",
     "thumbnail": "https://i.ibb.co.com/SXLxPRxj/images-3.jpg",
     "banner": "https://example.com/images/web-dev-essentials-banner.jpg",
-    "frequency": "One-time",
-    "price": 49.99,
-    "description": "A complete toolkit for modern web developers including templates, libraries, and resources.",
-    "tech_category": "Web Development",
+    "frequency": "Yearly",
+    "price": 1399.99,
+    "description": "iPhone 16 Pro delivers cutting-edge performance with the A18 Bionic chip, ProMotion display, enhanced camera system, and advanced AI capabilities.",
+    "tech_category": "Smartphone",
     "features": [
-      "Responsive Templates",
-      "Modern JavaScript Libraries",
-      "UI/UX Resources"
+      "A18 Bionic Chip with 6-Core GPU",
+      "6.7-inch ProMotion Super Retina XDR Display",
+      "Advanced Triple-Lens Camera with 8K Video",
+      "LiDAR Scanner for AR Applications",
+      "Emergency Satellite Connectivity"
     ],
     "subscription_benefits": [
-      "Lifetime Access to Updates",
-      "Exclusive Webinars",
-      "Priority Support"
+      "AppleCare+ Coverage Available",
+      "Exclusive iCloud Storage Upgrade",
+      "Early Access to New iOS Features"
     ],
     "ratings": 4.9,
-    "number_of_reviews": 520
+    "number_of_reviews": 850
   },
   {
     "id": 4,
-    "name": "Graphic Design Bundle",
+    "name": "iPhone 15",
     "thumbnail": "https://i.ibb.co.com/7xTkP8CG/images-6.jpg",
     "banner": "https://example.com/images/graphic-design-bundle-banner.jpg",
-    "frequency": "Yearly",
+    "frequency": "One-Time Purchase",
     "price": 149.99,
-    "description": "Enhance your design skills with a curated bundle of graphic design resources.",
-    "tech_category": "Graphic Design",
+    "description": "The iPhone 15 combines advanced camera systems, A17 Bionic chip, and a sleek design to deliver a smooth and powerful smartphone experience.",
+    "tech_category": "Smartphone",
     "features": [
-      "Premium Design Assets",
-      "Typography Collections",
-      "Design Tutorials"
+      "A17 Bionic Chip for Efficient Performance",
+      "6.1-inch Super Retina XDR Display",
+      "Dual-Lens Camera with Night Mode",
+      "Ceramic Shield and Water Resistance",
+      "Enhanced Battery Life for All-Day Use"
     ],
     "subscription_benefits": [
-      "Monthly New Asset Releases",
-      "Exclusive Design Community",
-      "Early Access to New Courses"
+      "AppleCare+ Coverage Available",
+      "Exclusive iCloud Storage Upgrade",
+      "Early Access to New iOS Features"
     ],
     "ratings": 4.6,
-    "number_of_reviews": 430
+    "number_of_reviews": 980
   },
   {
     "id": 5,
-    "name": "Mobile App Starter Kit",
+    "name": "iPhone 15 Pro",
     "thumbnail": "https://i.ibb.co.com/GfcZ6tY4/images-5.jpg",
     "banner": "https://example.com/images/mobile-app-starter-kit-banner.jpg",
     "frequency": "Monthly",
-    "price": 59.99,
-    "description": "Kickstart your mobile app projects with pre-built components and templates.",
-    "tech_category": "Mobile Development",
+    "price": 1199.99,
+    "description": "iPhone 15 Pro features the A17 Pro chip, ProMotion display, advanced triple-lens camera system, and exclusive ProMotion technologies for enhanced performance.",
+    "tech_category": "Smartphone",
     "features": [
-      "Cross-platform UI Kits",
-      "Reusable Components",
-      "API Integration Examples"
+      "A17 Pro Chip with 6-Core GPU",
+      "6.1-inch ProMotion Super Retina XDR Display",
+      "Advanced Triple-Lens Camera with 8K Video",
+      "Titanium Frame for Lightweight Durability",
+      "Emergency Satellite Connectivity"
     ],
     "subscription_benefits": [
-      "New Components Monthly",
-      "Access to Premium Templates",
-      "Dedicated Support"
+      "AppleCare+ Coverage Available",
+      "Exclusive iCloud Storage Upgrade",
+      "Early Access to New iOS Features"
     ],
     "ratings": 4.5,
-    "number_of_reviews": 275
+    "number_of_reviews": 750
   },
   {
     "id": 6,
-    "name": "Data Science Toolbox",
+    "name": "iPhone 15 Pro Max",
     "thumbnail": "https://i.ibb.co.com/W4m2c9sP/images-4.jpg",
     "banner": "https://example.com/images/data-science-toolbox-banner.jpg",
     "frequency": "Yearly",
-    "price": 249.99,
-    "description": "A comprehensive toolbox for data scientists including datasets, tools, and tutorials.",
-    "tech_category": "Data Science",
+    "price": 1299.99,
+    "description": "The iPhone 15 Pro Max combines the A17 Pro chip, massive 6.7-inch ProMotion display, advanced triple-lens camera, and titanium body for ultimate performance.",
+    "tech_category": "Smartphone",
     "features": [
-      "Curated Datasets",
-      "Data Analysis Tools",
-      "Visualization Libraries"
+      "A17 Pro Chip with Enhanced Graphics Performance",
+      "6.7-inch ProMotion Super Retina XDR Display",
+      "Advanced Triple-Lens Camera with 8K Video and Telephoto Zoom",
+      "Titanium Frame for Lightweight Durability",
+      "Emergency Satellite Connectivity"
     ],
     "subscription_benefits": [
-      "Exclusive Dataset Access",
-      "Advanced Tutorials",
-      "Community Support"
+      "AppleCare+ Coverage Available",
+      "Exclusive iCloud Storage Upgrade",
+      "Early Access to New iOS Features"
     ],
     "ratings": 4.9,
-    "number_of_reviews": 380
+    "number_of_reviews": 680
   }
 ]

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../Component/Navbar/Navbar';
 import usePageTitle from '../../Hooks/usePageTitle';
+import Footer from '../../Component/Footer/Footer';
 
 const Subscription = () => {
     usePageTitle("Subscription ")
@@ -134,7 +135,7 @@ const Subscription = () => {
                 </div>
                 </div>
             </div>
-          
+          <Footer/>
         </>
     );
 };

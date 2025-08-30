@@ -28,10 +28,10 @@ const Slider = () => {
             <img src={slider_img} alt="slide_1" className='w-full h-full object-cover rounded-lg' />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={slid_img_2} alt="slide_2" className='w-full h-full object-cover' />
+            <img src={slid_img_2} alt="slide_2" className='w-full h-full object-cover rounded-lg' />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={slid_img_3} alt="slide_3" className='w-full h-full object-cover' />
+            <img src={slid_img_3} alt="slide_3" className='w-full h-full object-cover rounded-lg' />
         </SwiperSlide>
          <div className="swiper-button-prev !w-8 !h-8 text-white after:!text-sm"></div>
         <div className="swiper-button-next !w-8 !h-8 text-white after:!text-sm"></div>

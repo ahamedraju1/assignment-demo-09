@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../Component/Navbar/Navbar";
 import { useParams } from "react-router";
+import Footer from "../../Component/Footer/Footer";
 
 // SubscriptionDetails page with review form (no local storage)
 export const SubscriptionDetails = () => {
@@ -47,29 +48,29 @@ export const SubscriptionDetails = () => {
         <Navbar></Navbar>
       </div>
       <div className="w-11/12 mx-auto my-48">
-        <img src={product?.thumbnail} alt="images" />
+        <img className="rounded-xl" src={product?.thumbnail} alt="images" />
         <div>
           <h2 className="text-3xl font-semibold my-5">{product?.name}</h2>
           <p className="text-2xl font-bold text-green-500">${product?.price}</p>
-          <p className="text-gray-500">{product?.description}</p>
-          <p className="text-gray-500 italic">Category: {product?.tech_category}</p>
+          <p className="text-gray-500 text-xl ">{product?.description}</p>
+          <p className="text-gray-500 italic text-lg py-1">Category: {product?.tech_category}</p>
           <p className="text-xl font-semibold mb-2">features:</p>
-          <ul className="list-disc list-inside text-gray-700">{product?.features?.map((feature) => (
+          <ul className="text-lg list-disc list-inside text-gray-700">{product?.features?.map((feature) => (
             <li key={feature}>{feature}</li>
           ))}
           </ul>
-          <p className="text-xl font-semibold mb-2">Subscription Benefits:</p>
-          <ul className="list-disc list-inside text-gray-700">{product?.subscription_benefits?.map((benefits) => (
+          <p className="text-xl font-semibold my-2">Subscription Benefits:</p>
+          <ul className="text-lg list-disc list-inside text-gray-700">{product?.subscription_benefits?.map((benefits) => (
             <li key={benefits}>{benefits}</li>
           ))}
           </ul>
-          <p className="text-yellow-500 font-semibold">⭐ {product?.ratings} / 5</p>
-          <p>{product?.number_of_reviews} reviews </p>
+          <p className="text-yellow-500 font-semibold text-lg">⭐ {product?.ratings} / 5</p>
+          <p className="text-lg">{product?.number_of_reviews} reviews </p>
         </div>
       </div>
 
 
-      <div className="min-h-screen w-full my-24 flex items-start justify-center p-6 bg-gray-50">
+      <div className="flex w-full my-32 items-start justify-center p-6 bg-gray-50">
         <div className="w-full max-w-xl bg-white rounded-2xl shadow p-6 space-y-6">
           <h2 className="text-3xl font-semibold">Subscription Details on your Opinion</h2>
 
@@ -119,6 +120,7 @@ export const SubscriptionDetails = () => {
           </form>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

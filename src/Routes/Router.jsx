@@ -12,6 +12,7 @@ import PrivateRoute from "../Provider/PrivateRoute";
 import AccessPlus from "../HomeLayout/AccessPlus";
 import Password from "../Component/Password/Password";
 import Subscription from "../Pages/Subscription/Subscription";
+import Footer from "../Component/Footer/Footer";
 // import Slider from "../Component/Navigation/Slider";
 
 export const router = createBrowserRouter(
@@ -25,7 +26,7 @@ export const router = createBrowserRouter(
                     element: <Slider></Slider>
                 },
                 {
-                    path: '/subscription',
+                    path: '/',
                     element: <SubscriptionBox></SubscriptionBox>
                 },
                 {
@@ -47,10 +48,10 @@ export const router = createBrowserRouter(
             </PrivateRoute>
         },
         {
-            path: '/subPackage',
-            element: <PrivateRoute> 
+            path: '/subscription',
+            element: <PrivateRoute>
                 <Subscription></Subscription>
-                </PrivateRoute>
+            </PrivateRoute>
         },
         {
             path: '/auth',
@@ -76,9 +77,18 @@ export const router = createBrowserRouter(
                 <SubscriptionDetails></SubscriptionDetails>
             </PrivateRoute>
         },
+
         {
             path: '/*',
-            element: <h2>Error/404 not page </h2>
-        }
+            element: <h2
+                className="text-center mt-5 font-semibold">
+                Error/404 not page
+            </h2>
+        },
+        {
+            path: '/footer',
+            Component: Footer
+        },
+
     ]
 )

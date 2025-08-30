@@ -43,7 +43,7 @@ const Navbar = () => {
                         <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : undefined)}>Home</NavLink>
                         <NavLink to="/dashboard">Dashboard</NavLink>
                         <NavLink to="/profile">Profile</NavLink>
-                        <NavLink to='/subPackage'>Subscription </NavLink>
+                        <NavLink to='/subscription'>Subscription </NavLink>
                     </nav>
 
                     <div className='md:hidden mt-2 flex items-center'>
